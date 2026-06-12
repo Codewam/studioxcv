@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="StudioXCV Portfolio – Browse our logo design, branding, packaging, and social media design work." />
+  <title>Portfolio | StudioXCV Design Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-x">X</span><span class="logo-cv">CV</span><span class="logo-studio">Studio</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PORTFOLIO HERO -->
+  <section class="page-hero portfolio-hero">
+    <div class="ph-bg">
+      <div class="ph-grid"></div>
+      <div class="ph-orb ph-orb-1"></div>
+      <div class="ph-orb ph-orb-2"></div>
+    </div>
+    <div class="container">
+      <div class="ph-content">
+        <span class="section-tag reveal">Our Work</span>
+        <h1 class="ph-title reveal">Creative <span class="accent">Portfolio</span></h1>
+        <p class="ph-sub reveal">A curated selection of our finest work across branding, identity, packaging, and beyond.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO FILTER -->
+  <section class="portfolio-section">
+    <div class="container">
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="logo">Logo Design</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="social">Social Media</button>
+        <button class="filter-btn" data-filter="print">Print Design</button>
+        <button class="filter-btn" data-filter="packaging">Packaging</button>
+        <button class="filter-btn" data-filter="marketing">Marketing</button>
+      </div>
+
+      <!-- PORTFOLIO GRID -->
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="port-item" data-category="logo">
+          <div class="port-card">
+            <div class="port-thumb logo-thumb-1">
+              <div class="port-mock">
+                <div class="mock-logo">◈<span>NOVA</span></div>
+              </div>
+            </div>
+            <div class="port-overlay">
+              <span class="port-cat">Logo Design</span>
+              <h4>Nova Tech — Brand Mark</h4>
+              <button class="port-view" onclick="openLightbox(0)">View Project</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-item port-featured" data-category="branding">
+          <div class="port-card">
+            <div class="port-thumb branding-thumb-1">
+              <div class="port-mock">
+                <div class="mock-brand">
+                  <div class="mb-logo">✦ LUCID</div>
+                  <div class="mb-colors">
+                    <span style="background:#FF3D00"></span>
+                    <span style="background:#FF6B35"></span>
+                    <span style="background:#FFB347"></span>
+                    <span style="background:#0d0d1a"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="port-overlay">
+              <span class="port-cat">Brand Identity</span>
+              <h4>Lucid Studio — Full Brand System</h4>
+              <button class="port-view" onclick="openLightbox(1)">View Project</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-item" data-category="social">
+          <div class="port-card">
+            <div class="port-thumb social-thumb-1">
+              <div class="port-mock social-mock">
+                <div class="sm-post">
+                  <div class="sm-header">◉ BrandPost</div>
+                  <div class="sm-body">Summer Sale<br/><b>50% OFF</b></div>
+                </div>
+              </div>
+            </div>
+            <div class="port-overlay">
+              <span class="port-cat">Social Media</span>
+              <h4>BrandPost — Campaign Set</h4>
+              <button class="port-view" onclick="openLightbox(2)">View Project</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-item" data-category="packaging">
+          <div class="port-card">
+            <div class="port-thumb packaging-thumb-1">
+              <div class="port-mock">
+                <div class="mock-pkg">
+                  <div class="pkg-box">
+                    <span>BREW</span>
+                    <small>PREMIUM COFFEE</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="port-overlay">
+              <span class="port-cat">Packaging</span>
+              <h4>FreshBrew — Product Packaging</h4>
+              <button class="port-view" onclick="openLightbox(3)">View Project</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-item" data-category="logo">
+          <div class="port-card">
+            <div class="port-thumb logo-thumb-2">
+              <div class="port-mock">
+                <div class="mock-logo" style="font-size:1.6rem;">⊞<span>APEX</span></div>
+              </div>
+            </div>
+            <div class="port-overlay">
+              <span class="port-cat">Logo Design</span>
+              <h4>Apex Ventures — Wordmark</h4>
+              <button class="port-view" onclick="openLightbox(4)">View Project</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-item" data-category="print">
+          <div class="port-card">
+            <div class="port-thumb print-thumb-1">
+              <div class="port-mock">
+                <div class="mock-poster">
+                  <div class="mp-line"></div>
+                  <span>ANNUAL</span>
+                  <b>REPORT</b>
+                  <div class="mp-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="port-overlay">
+              <span class="port-cat">Print Design</span>
+              <h4>Meridian Corp — Annual Report</h4>
+              <button class="port-view" onclick="openLightbox(5)">View Project</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-item port-featured" data-category="packaging">
+          <div class="port-card">
+            <div class="port-thumb packaging-thumb-2">
+              <div class="port-mock">
+                <div class="mock-pkg">
+                  <div class="pkg-box" style="background:linear-gradient(135deg,#7B2D8B,#E040FB); border-radius:8px;">
+                    <span>LUXE</span>
+                    <small>COSMETICS</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="port-overlay">
+              <span class="port-cat">Packaging</span>
+              <h4>Luxe Beauty — Premium Packaging Line</h4>
+              <button class="port-view" onclick="openLightbox(6)">View Project</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-item" data-category="marketing">
+          <div class="port-card">
+            <div class="port-thumb marketing-thumb-1">
+              <div class="port-mock">
+                <div class="mock-flyer">
+                  <div class="mf-header">GRAND OPENING</div>
+                  <div class="mf-date">NOV 15</div>
+                </div>
+              </div>
+            </div>
+            <div class="port-overlay">
+              <span class="port-cat">Marketing Materials</span>
+              <h4>Zephyr Agency — Launch Campaign</h4>
+              <button class="port-view" onclick="openLightbox(7)">View Project</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="port-item" data-category="branding">
+          <div class="port-card">
+            <div class="port-thumb branding-thumb-2">
+              <div class="port-mock">
+                <div class="mock-brand">
+                  <div class="mb-logo" style="color:#00D4FF;">◇ CREST</div>
+                  <div class="mb-colors">
+                    <span style="background:#00D4FF"></span>
+                    <span style="background:#0047AB"></span>
+                    <span style="background:#fff"></span>
+                    <span style="background:#111"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="port-overlay">
+              <span class="port-cat">Branding</span>
+              <h4>Crest Finance — Corporate Identity</h4>
+              <button class="port-view" onclick="openLightbox(8)">View Project</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-overlay" onclick="closeLightbox()"></div>
+    <div class="lightbox-content">
+      <button class="lb-close" onclick="closeLightbox()">✕</button>
+      <button class="lb-prev" id="lbPrev">←</button>
+      <button class="lb-next" id="lbNext">→</button>
+      <div class="lb-body" id="lbBody">
+        <!-- dynamically populated -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-bg">
+      <div class="cta-orb cta-orb-1"></div>
+      <div class="cta-orb cta-orb-2"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content reveal">
+        <span class="section-tag">Let's Collaborate</span>
+        <h2>Your Brand Deserves to <span class="accent">Stand Out</span></h2>
+        <p>Ready to join our portfolio of exceptional brands? Let's create something remarkable together.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary btn-lg">Start a Project <span class="btn-arrow">→</span></a>
+          <a href="services.html" class="btn btn-ghost btn-lg">Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo footer-logo">
+            <span class="logo-x">X</span><span class="logo-cv">CV</span><span class="logo-studio">Studio</span>
+          </a>
+          <p>Transforming ideas into powerful visual designs. Premium creative studio for ambitious brands.</p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Facebook">f</a>
+            <a href="#" class="social-icon" aria-label="Instagram">in</a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">li</a>
+            <a href="#" class="social-icon" aria-label="X/Twitter">𝕏</a>
+            <a href="#" class="social-icon" aria-label="Behance">Be</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Logo Design</a></li>
+            <li><a href="services.html">Brand Identity</a></li>
+            <li><a href="services.html">Social Media</a></li>
+            <li><a href="services.html">Packaging</a></li>
+            <li><a href="services.html">Motion Graphics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li>📞 +254 700 000 000</li>
+            <li>✉️ hello@studioxcv.com</li>
+            <li>📍 Nairobi, Kenya</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 StudioXCV Design Studio. All rights reserved.</p>
+        <p>Crafted with ♥ for creative excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
